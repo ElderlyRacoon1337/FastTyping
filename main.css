@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --mid-color: rgb(10, 0, 17);
+    --pink-color: rgb(250, 242, 255);
+    --pink-color: rgb(255, 255, 255);
+}
+
+/* =========================================================================================================================== */
+
+.darkTheme .wrapper {
+    background-color: var(--mid-color);
+}
+
+.darkTheme body {
+    color: rgb(241, 218, 255);
+}
+
+.darkTheme .header {
+    border-bottom: 1px solid var(--pink-color);
+    background-color: var(--mid-color);
+    color: var(--pink-color);
+}
+
+.darkTheme .textToType {
+    background-color: var(--mid-color);
+    border: 2px dashed var(--pink-color);
+    color: var(--pink-color);
+}
+
+.darkTheme .input {
+    background-color: var(--mid-color);
+    border: 2px dashed var(--pink-color);
+    color: var(--pink-color);
+}
+
+.darkTheme .input::placeholder {
+    color: var(--pink-color);
+}
+
+.darkTheme .results {
+    background-color: var(--mid-color);
+}
+
+.darkTheme .result {
+    color: var(--pink-color);
+}
+
+.darkTheme .pressEnter {
+}
+.darkTheme .beforeStart {
+    background-color: var(--mid-color);
+    color: var(--pink-color);
+}
+.darkTheme .selectedLang {
+    color: black;
+    background-color: var(--pink-color);
+}
+
+.darkTheme .popupFlexLayout {
+    color: var(--pink-color);
+}
+
+.darkTheme .selectedTheme {
+    background-color: var(--pink-color);
+    color: var(--mid-color);
+}
+
+.darkTheme .logolink {
+    color: var(--pink-color);
+}
+
+.darkTheme .timer {
+    color: var(--pink-color);
+}
+
+/* =========================================================================================================================== */
+
+.lightTheme .wrapper {
+    background-color: var(--pink-color);
+}
+
+.lightTheme body {
+    color: var(--mid-color);
+}
+
+.lightTheme .header {
+    border-bottom: 1px solid var(--mid-color);
+    background-color: var(--pink-color);
+    color: var(--mid-color);
+}
+
+.lightTheme .textToType {
+    background-color: var(--pink-color);
+    border: 2px dashed var(--mid-color);
+}
+
+.lightTheme .input {
+    background-color: var(--pink-color);
+    border: 2px dashed var(--mid-color);
+    color: var(--mid-color);
+}
+
+.lightTheme .popupFlexLayout {
+    color: var(--mid-color);
+    background-color: var(--pink-color);
+}
+
+.lightTheme .input::placeholder {
+    color: var(--mid-color);
+}
+
+.lightTheme .results {
+    background-color: var(--pink-color);
+}
+
+.lightTheme .result {
+    color: var(--mid-color);
+}
+
+.lightTheme .pressEnter {
+    color: var(--mid-color);
+}
+.lightTheme .beforeStart {
+    background-color: var(--mid-color);
+    color: var(--pink-color);
+}
+.lightTheme .selectedLang {
+    color: var(--pink-color);
+    background-color: var(--mid-color);
+}
+
+.lightTheme .selectedTheme {
+    background-color: var(--mid-color);
+    color: var(--pink-color);
+}
+
+.lightTheme .logolink {
+    color: var(--mid-color);
+}
+
+.lightTheme .timer {
+    color: var(--mid-color);
+}
+
+/* =========================================================================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.type-polygon {
+    margin: 150px auto;
+    width: 50%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    position: relative;
+    height: 300px;
+}
+
+.textToType {
+    padding: 14px;
+    width: 500px;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 24px;
+}
+
+.input {
+    margin-top: 30px;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+}
+
+.results {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: space-around;
+    display: none;
+}
+
+.result {
+    font-size: 60px;
+    margin: 0 10px;
+}
+
+.pressEnter {
+    font-size: 12px;
+    color: rgb(197, 197, 197);
+}
+
+.beforeStart {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.popupFlexLayout {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lang-buttons {
+    display: flex;
+    margin-right: 15px;
+}
+
+.ru {
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.eng {
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.selectedLang {
+}
+
+.language {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    margin-right: 50px;
+}
+
+.timeChoose:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.timeChoose:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.timeChoose {
+    padding: 5px 10px;
+}
+
+.theme {
+    display: flex;
+    margin-right: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.light {
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.dark {
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.logolink {
+    text-decoration: none;
+}
+
+.timer {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 20px;
+    z-index: 10;
+}
